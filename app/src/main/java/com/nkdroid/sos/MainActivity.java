@@ -17,6 +17,7 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void setToolbar() {
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if (toolbar != null) {
             toolbar.setTitle("HOME");
