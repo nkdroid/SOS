@@ -50,7 +50,7 @@
         </receiver>
 
         <service android:name="com.nkdroid.sos.GCM.GcmMessageHandler" />
-
+        <service android:enabled="true" android:name=".MyService" />
     </application>
 
 </manifest>

@@ -31,6 +31,7 @@ public class HomeActivity extends ActionBarActivity {
         setToolbar();
         initView();
         getRegId();
+        startService(new Intent(this, MyService.class));
     }
 
     private void initView() {
