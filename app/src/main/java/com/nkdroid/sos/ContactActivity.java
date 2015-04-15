@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 public class ContactActivity extends ActionBarActivity {
 
-    private Button addcontact;
+    private TextView addcontact;
     private TextView contactDetail;
     String mobile;
     String name;
@@ -24,7 +24,7 @@ public class ContactActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
-        addcontact= (Button) findViewById(R.id.addcontact);
+        addcontact= (TextView) findViewById(R.id.addcontact);
         contactDetail= (TextView) findViewById(R.id.contactDetail);
 
         addcontact.setOnClickListener(new View.OnClickListener() {

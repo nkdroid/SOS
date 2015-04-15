@@ -33,6 +33,7 @@ android:background="@drawable/bg_plain"
             android:gravity="center"
             android:layout_height="match_parent">
             <LinearLayout
+                android:gravity="center"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -58,6 +59,7 @@ android:background="@drawable/bg_plain"
             android:gravity="center"
             android:layout_height="match_parent">
             <LinearLayout
+                android:gravity="center"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -89,6 +91,7 @@ android:background="@drawable/bg_plain"
             android:gravity="center"
             android:layout_height="match_parent">
             <LinearLayout
+                android:gravity="center"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -113,12 +116,13 @@ android:background="@drawable/bg_plain"
             android:gravity="center"
             android:layout_height="match_parent">
             <LinearLayout
+                android:gravity="center"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
                     android:id="@+id/call"
-                    android:src="@drawable/ic_call"
+                    android:src="@drawable/ic_calling"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView
@@ -145,6 +149,7 @@ android:background="@drawable/bg_plain"
             android:layout_height="match_parent"
             >
             <LinearLayout
+                android:gravity="center"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
@@ -170,6 +175,7 @@ android:background="@drawable/bg_plain"
             android:gravity="center"
             android:layout_height="match_parent">
             <LinearLayout
+                android:gravity="center"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">

@@ -21,6 +21,9 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
 
+import com.nkdroid.sos.Model.ComplexPreferences;
+import com.nkdroid.sos.Model.SettingData;
+
 
 public class PrefUtils  {
 
@@ -51,6 +54,20 @@ public class PrefUtils  {
     }
 
 
+
+    public static void saveSettingData(SettingData offer, Context ctx){
+
+        ComplexPreferences complexPreferences = ComplexPreferences.getComplexPreferences(ctx, "setting_data", 0);
+        complexPreferences.putObject("setting_value", offer);
+        complexPreferences.commit();
+
+    }
+
+    public static SettingData getSettingData(Context ctx){
+        ComplexPreferences complexPreferences = ComplexPreferences.getComplexPreferences(ctx, "setting_data", 0);
+        SettingData offer = complexPreferences.getObject("setting_value", SettingData.class);
+        return offer;
+    }
 
 
 }

@@ -81,10 +81,10 @@ public class HomeActivity extends ActionBarActivity {
         message.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { Intent intent=new Intent(getApplicationContext(),MainActivity.class);
-                PendingIntent pi=PendingIntent.getActivity(getApplicationContext(), 0, intent,0);
-
-                SmsManager sms=SmsManager.getDefault();
-                sms.sendTextMessage("9825667095", null, "hello surbhi...", pi,null);
+//                PendingIntent pi=PendingIntent.getActivity(getApplicationContext(), 0, intent,0);
+//
+//                SmsManager sms=SmsManager.getDefault();
+//                sms.sendTextMessage("9825667095", null, "hello surbhi...", pi,null);
 
 
             }
