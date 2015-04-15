@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+android:background="@drawable/bg_plain"
 
 
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -45,18 +45,43 @@
         android:id="@+id/etPassword"
         android:layout_marginTop="8dp"
         android:hint="Enter Password"
+
+
+
+
         android:textSize="22sp"
         android:textColor="#494949"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/etmobile"
+            android:layout_marginTop="8dp"
+            android:hint="Enter Mobile No."
+            android:textSize="22sp"
+            android:textColor="#494949"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_marginTop="8dp"
+            android:hint="Enter Email Id"
+            android:textSize="22sp"
+            android:textColor="#494949"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
 
     <Button
         android:layout_gravity="center"
         android:id="@+id/btnRegister"
         android:layout_marginTop="8dp"
         android:text="Register"
+        android:background="@drawable/background_tab_pink"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+
         android:textSize="22sp"
-        android:textColor="#494949"
+        android:textColor="#FFF"
         android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

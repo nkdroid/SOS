@@ -5,6 +5,26 @@ package com.nkdroid.sos;
  */
 public class User {
 
+    public String policename;
+
+    public String address;
+
+    public String mobile;
+
+    public String latitude;
+
+    public String longitude;
+    public User(){}
+    public User(String policename,
+                String latitude, String longitude, String address, String mobile) {
+        super();
+        this.policename = policename;
+        this.address = address;
+        this.mobile = mobile;
+        this.latitude = latitude;
+        this.longitude = longitude;
+    }
+
     public boolean isLogin=false;
 
     private String username;
