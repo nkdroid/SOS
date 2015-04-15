@@ -98,8 +98,17 @@ public class SettingActivity extends ActionBarActivity {
                     }
                 }
 
+                 View contactView = getLayoutInflater().inflate(R.layout.smsview, messageContainer, false);
+                TextView smsName = (TextView) contactView.findViewById(R.id.txtMessage);
+                smsName.setText(settingData.selectedSms);
+                messageContainer.addView(contactView);
+
             } else {
                 settingData = new SettingData();
+                View contactView = getLayoutInflater().inflate(R.layout.smsview, messageContainer, false);
+                TextView smsName = (TextView) contactView.findViewById(R.id.txtMessage);
+                smsName.setText(settingData.selectedSms);
+                messageContainer.addView(contactView);
             }
 //        }catch (Exception e){
 //            e.printStackTrace();
@@ -217,22 +226,9 @@ public class SettingActivity extends ActionBarActivity {
                         }
                     }
                     contactContainer.removeAllViews();
-//                    final View contactView = getLayoutInflater().inflate(R.layout.contactview, contactContainer, false);
-//                    TextView contactName= (TextView) contactView.findViewById(R.id.contactName);
-//                    contactName.setText(cname);
-//                    TextView contactNumber= (TextView) contactView.findViewById(R.id.contactNumber);
-//                    contactNumber.setText(cno);
-//                    contactContainer.addView(contactView);
+                    messageContainer.removeAllViews();
+                    settingData.selectedSms="new";
                     settingData.contactList.add(new ContactInfo(cname, cno));
-//                    ImageView deleteContact = (ImageView) contactView.findViewById(R.id.deleteContact);
-//                    deleteContact.setOnClickListener(new View.OnClickListener() {
-//                        @Override
-//                        public void onClick(View v) {
-//                            settingData.contactList.remove(new ContactInfo(cname, cno));
-//                            contactContainer.removeView(contactView);
-//                            PrefUtils.saveSettingData(settingData, SettingActivity.this);
-//                        }
-//                    });
                     PrefUtils.saveSettingData(settingData,SettingActivity.this);
 
                 } catch(Exception e){

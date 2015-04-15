@@ -15,7 +15,7 @@ public class SettingData {
 
     public boolean isSound=false;
 
-    public String selectedSms;
+    public String selectedSms="Sample Message";
 
     public ArrayList<ContactInfo> contactList=new ArrayList<>();
 }
